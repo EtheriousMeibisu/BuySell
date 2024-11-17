@@ -3,16 +3,16 @@
     <h1 style="text-align: center">Авторизация</h1>
     <hr>
     <form action="/login " method="post">
-        <div class="form-group">
-            <label for="email">Электронная почта</label>
-            <input type="email" class="form-control <#if RequestParameters.error??>is-invalid</#if>" id="email" name="username">
-            <div id="email" class="invalid-feedback">
-                Неверныя электронная почта
+        <div class="mb-3">
+            <label for="email" class="form-label">Электронная почта</label>
+            <input type="email" class="form-control" placeholder="name@example.com" id="email" name="username">
+            <div id="email" class="invalid-tooltip">
+                Неверная электронная почта
             </div>
         </div>
         <div class="form-group">
             <label for="password">Пароль</label>
-            <input type="password" class="form-control <#if RequestParameters.error??>is-invalid</#if>" id="password" name="password">
+            <input type="password" class="form-control" id="password" name="password">
             <div id="password" class="invalid-feedback">
                 Неверный пароль
             </div>

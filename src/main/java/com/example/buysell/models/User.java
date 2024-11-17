@@ -1,15 +1,11 @@
 package com.example.buysell.models;
-
 import com.example.buysell.models.enums.Role;
 import jakarta.persistence.*;
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-
-
 import java.time.LocalDateTime;
 import java.util.*;
-
 @Entity
 @Table(name = "users")
 @Data
@@ -19,7 +15,7 @@ public class User implements UserDetails {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "email" , unique = true)
+    @Column(unique = true, updatable = false)
     private String email;
 
     @Column(name = "phone_number")

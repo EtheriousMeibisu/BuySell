@@ -40,7 +40,7 @@
             </div>
             <div class="form-group">
                 <div class="custom-file">
-                    <input required type="file" name="file1" id="file1">
+                    <input type="file" name="file1" id="file1">
                     <label class="custom-file-label" for="file1">Первая фотография к товару</label>
                 </div>
             </div>
